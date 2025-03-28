@@ -1,8 +1,14 @@
-import {PageInfo} from '@/types';
+import { PageInfo } from "@/types";
 
 type Props = {
     page: PageInfo;
-}
-export default function Pagination({page}: Props){
-    return <p>Page 1 of 3 (20 results in total)</p>
+};
+
+export default function Pagination({ page }: Props) {
+    return (
+        <p className="text-sm text-neutral-400 pb-20">
+            Page {page.number + 1} of {page.totalPages} ({page.totalElements} rooms
+            total)
+        </p>
+    );
 }

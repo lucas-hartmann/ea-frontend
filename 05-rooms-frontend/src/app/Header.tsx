@@ -20,7 +20,6 @@ export default async function Header(){
         <header className="bg-white shadow-md py-4 px-6 flex items-center justify-between">
             <h1 className="text-2xl font-bold text-gray-800">ArrBnB</h1>
             <nav className="flex gap-6 text-gray-600">
-                <Link href="/" className="hover:text-gray-900">Home</Link>
                 <Link href="/rooms" className="hover:text-gray-900">Rooms</Link>
                 <Link href="/create" className="hover:text-gray-900">Create room</Link>
             </nav>
